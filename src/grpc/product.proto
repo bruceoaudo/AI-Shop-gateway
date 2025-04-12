@@ -1,0 +1,17 @@
+syntax = "proto3";
+package product;
+
+message Category {
+    string categoryId = 1;
+    string name = 2;
+}
+
+message CategoriesMessageResponse {
+    repeated Category categories = 1;
+}
+
+service ProductService {
+    rpc GetAllCategories(Empty) returns (CategoriesMessageResponse) {}
+}
+
+message Empty {}

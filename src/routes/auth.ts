@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { userClient } from "../grpc/client";
+import { userClient } from "../grpc/userClient";
 import { validateRegisterUserInput } from "../middlewares/validateRegisterUserInput";
 import * as argon2 from "argon2";
 import { validateLoginUserInput } from "../middlewares/validateLoginUserInput";
